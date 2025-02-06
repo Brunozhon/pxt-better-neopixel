@@ -20,6 +20,12 @@ namespace betterNeopixel {
             Math.min(half_length, percent * half_length)
         )
 
-
+        for (let i = 0; i < np_to_light; i++) {
+            switch (style) {
+            case Style.oti:
+                np.setPixelColor(i, neopixel.colors(NeoPixelColors.White))
+                np.setPixelColor(29 - i, neopixel.colors(NeoPixelColors.White))
+            }
+        }
     }
 }
