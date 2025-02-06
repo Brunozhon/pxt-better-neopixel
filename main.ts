@@ -1,15 +1,16 @@
+enum Style {
+    //% block="outside to inside"
+    oti = 0,
+    //% block="inside to outside"
+    ito = 1,
+    //% block="left to right"
+    ltr = 2,
+    //% block="right to left"
+    rtl = 3,
+}
+
 //% color="#AA278D" weight=100 icon="\uf0eb" block="Better NeoPixel"
 namespace betterNeopixel {
-    enum Style {
-        //% block="outside to inside"
-        oti = 0,
-        //% block="inside to outside"
-        ito = 1,
-        //% block="left to right"
-        ltr = 2,
-        //% block="right to left"
-        rtl = 3,
-    }
     
     //% block="create graph with $np|using value $value|capped at $max|using style $style"
     export function createGraph(np: neopixel.Strip,
